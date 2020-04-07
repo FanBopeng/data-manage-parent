@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    master:
+      url: jdbc:mysql://localhost:3306/data_master?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      username: root
+      password: 123456
+    slave:
+      url: jdbc:mysql://localhost:3306/data_slave?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      username: root
+      password: 123456
