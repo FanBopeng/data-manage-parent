@@ -17,11 +17,11 @@
         <!-- 数据源动态路由 -->
         <module>case01-master-slave</module>
         <!-- 动态添加管理数据源 -->
-        <!-- <module>case02-dynamic-add</module> -->
+        <module>case02-dynamic-add</module>
         <!-- 数据动态读和写 -->
-        <!-- <module>case03-read-write</module> -->
+        <!-- <module>case03-read-write</module>-->
         <!-- 关系型分库列式分布计算 -->
-        <!-- <module>case04-shard-ing</module> -->
+        <!-- <module>case04-shard-ing</module>-->
     </modules>
 
 </project>
