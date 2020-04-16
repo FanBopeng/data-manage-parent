@@ -1,0 +1,5 @@
+CREATE TABLE `rw_read` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `sign` varchar(20) NOT NULL COMMENT '标识',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COMMENT='读写表';
