@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shard.ing.mapper.UserInfoMapper" >
+
+    <select id="selectByPhone" resultType="com.shard.ing.entity.UserInfoEntity">
+        select user_id userId,user_phone userPhone from user_info
+        where user_phone = #{userPhone}
+    </select>
+
+    <insert id="batchInsert">
+        insert into user_info (user_phone) values
+        <foreach collection="userList" item="item" separator=",">
+            (#{item.userPhone})
+        </foreach>
+    </insert>
+
+</mapper>
