@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.post.gresql.mapper.UserJsonMapper" >
+
+    <insert id="addUserJson" parameterType="com.post.gresql.entity.UserJsonEntity">
+        INSERT INTO pq_user_json (id,title,user_list,create_time)
+        VALUES (#{id}, #{title}, #{userList, typeHandler=com.post.gresql.config.JsonTypeHandler}, #{createTime})
+    </insert>
+
+</mapper>

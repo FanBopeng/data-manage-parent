@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driverClassName: org.postgresql.Driver
+      url: jdbc:postgresql://127.0.0.1:5432/db_01
+      username: root01
+      password: 123456

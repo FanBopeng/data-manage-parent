@@ -22,7 +22,10 @@
         <module>case03-read-write</module>
         <!-- 关系型分库列式分布计算 -->
         <module>case04-shard-ing</module>
-
+        <!-- PostGreSql数据库 -->
+        <module>case05-post-gresql</module>
+        <!-- DataX 数据同步组件 -->
+        <module>case06-datax-sync</module>
     </modules>
 
 </project>
