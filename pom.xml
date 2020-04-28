@@ -18,6 +18,8 @@
     <modules>
         <!-- 数据源管理 -->
         <module>heap01-data-source</module>
+        <!-- 架构设计管理 -->
+        <module>heap03-frame-design</module>
     </modules>
 
     <!-- 版本管理 -->

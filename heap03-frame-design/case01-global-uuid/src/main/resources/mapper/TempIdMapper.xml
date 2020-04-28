@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.global.uuid.mapper.TempIdMapper" >
+
+    <insert id="insert" parameterType="com.global.uuid.entity.TempIdEntity"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id" >
+        INSERT INTO du_temp_id (create_time) VALUES (#{createTime})
+    </insert>
+
+    <insert id="insertA" parameterType="com.global.uuid.entity.TempIdEntity"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id" >
+        INSERT INTO du_temp_id_a (create_time) VALUES (#{createTime})
+    </insert>
+
+    <insert id="insertB" parameterType="com.global.uuid.entity.TempIdEntity"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id" >
+        INSERT INTO du_temp_id_b (create_time) VALUES (#{createTime})
+    </insert>
+
+    <insert id="insertC" parameterType="com.global.uuid.entity.TempIdEntity"
+            useGeneratedKeys="true" keyProperty="id" keyColumn="id" >
+        INSERT INTO du_temp_id_c (create_time) VALUES (#{createTime})
+    </insert>
+
+</mapper>
