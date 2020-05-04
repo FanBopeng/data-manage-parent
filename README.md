@@ -16,6 +16,7 @@
 |序号| 标题|
 |:---|:---|
 01 | [架构基础：单服务.集群.分布式，基本区别和联系](https://mp.weixin.qq.com/s/TPbbo1EABJsDCcjL7n9wmQ)|
+02 | [架构设计：分布式业务系统中，全局ID生成策略](https://mp.weixin.qq.com/s/1TKAwr99rKEHSxqXFixEhQ)|
 
 持续更新中...
 
