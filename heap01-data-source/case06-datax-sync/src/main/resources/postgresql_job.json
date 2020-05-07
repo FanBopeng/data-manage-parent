@@ -1,0 +1,43 @@
+{
+  "job": {
+    "setting": {
+      "speed": {
+        "channel": "3"
+      }
+    },
+    "content": [
+      {
+        "reader": {
+          "name": "postgresqlreader",
+          "parameter": {
+            "username": "root01",
+            "password": "123456",
+            "column": ["id","user_name","user_age"],
+            "connection": [
+              {
+                "jdbcUrl": ["jdbc:postgresql://127.0.0.1:5432/db_01"],
+                "table": ["data_user"]
+              }
+            ]
+          }
+        },
+        "writer": {
+          "name": "postgresqlwriter",
+          "parameter": {
+            "username": "root01",
+            "password": "123456",
+            "column": ["id","user_name","user_age"],
+            "connection": [
+              {
+                "jdbcUrl": "jdbc:postgresql://127.0.0.1:5432/db_01",
+                "table": ["sync_user"]
+              }
+            ],
+            "postSql": [],
+            "preSql": []
+          }
+        }
+      }
+    ]
+  }
+}
