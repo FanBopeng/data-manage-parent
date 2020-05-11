@@ -17,6 +17,8 @@
     <modules>
         <!-- 全局唯一ID生成 -->
         <module>case01-global-uuid</module>
+        <!-- Zookeeper 集群 -->
+        <module>case02-zkper-cluster</module>
     </modules>
 
 </project>

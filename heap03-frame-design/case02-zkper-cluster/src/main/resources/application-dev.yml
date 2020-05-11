@@ -1,0 +1,12 @@
+zoo:
+  keeper:
+    #服务器地址
+    server: 127.0.0.133:2181,127.0.0.136:2181,127.0.0.137:2181
+    #会话超时时间
+    sessionTimeoutMs: 3000
+    #连接超时时间
+    connectionTimeoutMs: 60000
+     #最大重试次数
+    maxRetries: 3
+    #初始休眠时间
+    baseSleepTimeMs: 1000
