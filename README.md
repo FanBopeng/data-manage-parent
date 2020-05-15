@@ -1,7 +1,7 @@
 
 ## 参考文章
 
-### 数据管理
+### 1、数据管理
 
 |序号| 标题|
 |:---|:---|
@@ -12,7 +12,11 @@
 |05 | [数据源管理：PostGreSQL环境整合，JSON类型应用](https://mp.weixin.qq.com/s/GqFJCoWiEtgG-LXY3Cb54w)|
 |06 | [数据源管理：基于DataX组件，同步数据和源码分析](https://mp.weixin.qq.com/s/FZz-0Q5d1ZLi4nLE2uIchQ)|
 
-### 系统架构
+### 2、数据分析
+
+待更新...
+
+### 3、架构设计
 
 |序号| 标题|
 |:---|:---|
