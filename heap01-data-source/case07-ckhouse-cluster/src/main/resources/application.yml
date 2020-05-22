@@ -1,0 +1,19 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8007
+spring:
+  profiles:
+    active: dev
+  application:
+    name: case07-ckhouse-cluster
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+# mybatis 配置
+mybatis:
+  type-aliases-package: com.ckhouse.cluster
+  mapper-locations: classpath:/mapper/*.xml

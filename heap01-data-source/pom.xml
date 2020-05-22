@@ -26,6 +26,8 @@
         <module>case05-post-gresql</module>
         <!-- DataX 数据同步组件 -->
         <module>case06-datax-sync</module>
+        <!-- ClickHouse集群化管理 -->
+        <module>case07-ckhouse-cluster</module>
     </modules>
 
 </project>
