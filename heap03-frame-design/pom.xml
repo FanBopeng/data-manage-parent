@@ -19,6 +19,8 @@
         <module>case01-global-uuid</module>
         <!-- Zookeeper 集群 -->
         <module>case02-zkper-cluster</module>
+        <!-- 接口幂等性设计 -->
+        <module>case03-idem-potent</module>
     </modules>
 
 </project>
