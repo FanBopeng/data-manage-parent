@@ -21,6 +21,8 @@
         <module>case02-zkper-cluster</module>
         <!-- 接口幂等性设计 -->
         <module>case03-idem-potent</module>
+        <!-- 缓存设计和监控 -->
+        <module>case04-cache-redis</module>
     </modules>
 
 </project>
