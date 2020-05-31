@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smart.tag.mapper.TagCloudMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.smart.tag.entity.TagCloud">
+        <id column="id" property="id" />
+        <result column="catalog_id" property="catalogId" />
+        <result column="tag_name" property="tagName" />
+        <result column="tag_code" property="tagCode" />
+        <result column="bind_column" property="bindColumn" />
+        <result column="data_type" property="dataType" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="remark" property="remark" />
+        <result column="state" property="state" />
+    </resultMap>
+
+</mapper>
