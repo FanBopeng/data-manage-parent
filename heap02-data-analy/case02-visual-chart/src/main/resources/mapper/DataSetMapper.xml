@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.visual.chart.mapper.DataSetMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.visual.chart.entity.DataSetEntity">
+        <id column="id" property="id" />
+        <result column="product_sort" property="productSort" />
+        <result column="product_name" property="productName" />
+        <result column="inventory" property="inventory" />
+        <result column="price" property="price" />
+        <result column="total_sales" property="totalSales" />
+        <result column="sales_amount" property="salesAmount" />
+        <result column="place_origin" property="placeOrigin" />
+        <result column="weight" property="weight" />
+        <result column="color" property="color" />
+        <result column="high_praise" property="highPraise" />
+        <result column="low_praise" property="lowPraise" />
+        <result column="create_time" property="createTime" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT * FROM data_set_view
+    </select>
+
+    <select id="taskCount" resultType="java.lang.Double">
+        SELECT COUNT(DISTINCT ${columnName}) FROM ${tableName}
+    </select>
+
+    <select id="taskSum" resultType="java.lang.Double">
+        SELECT SUM(${columnName}) FROM ${tableName}
+    </select>
+
+    <select id="taskPercent" resultType="java.lang.Double">
+        SELECT (SELECT t1.${columnName} FROM ${tableName} t1 WHERE t1.id=#{productId})/SUM(t2.${columnName}) FROM ${tableName} t2
+    </select>
+</mapper>

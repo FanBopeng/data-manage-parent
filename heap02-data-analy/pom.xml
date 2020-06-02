@@ -13,8 +13,9 @@
     <artifactId>heap02-data-analy</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <!-- 只能数据标签 -->
         <module>case01-smart-tag</module>
-        <!--<module>case02-visual-chart</module> -->
+        <module>case02-visual-chart</module>
     </modules>
 
 </project>
