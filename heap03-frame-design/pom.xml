@@ -23,6 +23,8 @@
         <module>case03-idem-potent</module>
         <!-- 缓存设计和监控 -->
         <module>case04-cache-redis</module>
+        <!-- 异步处理多种实现模式 -->
+        <module>case05-async-deal</module>
     </modules>
 
 </project>
