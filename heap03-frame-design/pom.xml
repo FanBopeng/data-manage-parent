@@ -25,6 +25,8 @@
         <module>case04-cache-redis</module>
         <!-- 异步处理多种实现模式 -->
         <module>case05-async-deal</module>
+        <!-- 高并发业务和资源锁 -->
+        <module>case06-lock-strategy</module>
     </modules>
 
 </project>

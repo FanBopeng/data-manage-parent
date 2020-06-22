@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lock.strategy.mapper.DataLockMapper" >
+
+    <select id="getById" resultType="com.lock.strategy.entity.DataLockEntity">
+        SELECT id,inventory,lock_value lockValue FROM dl_data_lock WHERE id=#{id}
+    </select>
+
+    <update id="updateByLock">
+        UPDATE dl_data_lock SET inventory=inventory-1,lock_value=#{lockVersion}
+        WHERE id=#{id} AND lock_value &lt;#{lockVersion}
+    </update>
+
+    <update id="updateByInventory">
+        UPDATE dl_data_lock SET inventory=inventory-1 WHERE id=#{id} AND inventory=#{inventory}
+    </update>
+
+</mapper>
