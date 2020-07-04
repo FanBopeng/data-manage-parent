@@ -27,6 +27,8 @@
         <module>case05-async-deal</module>
         <!-- 高并发业务和资源锁 -->
         <module>case06-lock-strategy</module>
+        <!-- 服务和数据库拆分 -->
+        <module>case07-service-data</module>
     </modules>
 
 </project>
