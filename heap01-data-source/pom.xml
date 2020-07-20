@@ -30,6 +30,8 @@
         <module>case07-ckhouse-cluster</module>
         <!-- Kafka集群化和存储管理 -->
         <module>case08-kafka-cluster</module>
+        <!-- ElasticSearch集群模式 -->
+        <module>case09-esearch-cluster</module>
     </modules>
 
 </project>

@@ -1,0 +1,7 @@
+spring:
+  data:
+    elasticsearch:
+      # 集群名称
+      cluster-name: esmaster
+      # 集群节点
+      cluster-nodes: en-master:9300,en-node01:9300,en-node02:9300
