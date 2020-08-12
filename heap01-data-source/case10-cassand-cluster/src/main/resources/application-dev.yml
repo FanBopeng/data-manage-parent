@@ -1,0 +1,7 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: castest
+      contact-points: 192.168.72.138,192.168.72.132,192.168.72.139
+      port: 9042
+      cluster-name: CasCluster

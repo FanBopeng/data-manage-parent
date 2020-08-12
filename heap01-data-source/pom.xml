@@ -32,6 +32,8 @@
         <module>case08-kafka-cluster</module>
         <!-- ElasticSearch集群模式 -->
         <module>case09-esearch-cluster</module>
+        <!-- Cassandra集群模式 -->
+        <module>case10-cassand-cluster</module>
     </modules>
 
 </project>
