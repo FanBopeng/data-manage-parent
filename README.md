@@ -1,6 +1,20 @@
 ## 参考文章
 
-### 1、数据管理
+### 架构设计
+
+|序号| 标题|
+|:---|:---|
+|00 | [架构设计：单服务.集群.分布式，基本区别和联系](https://mp.weixin.qq.com/s/NGxI3rC-6mWMDnrClaOR3Q)|
+|01 | [架构设计：分布式业务系统中，全局ID生成策略](https://mp.weixin.qq.com/s/1TKAwr99rKEHSxqXFixEhQ)|
+|02 | [架构设计：分布式系统调度，Zookeeper集群化管理](https://mp.weixin.qq.com/s/Yr4A95poVjlFsQ-Q0dF7hA)|
+|03 | [架构设计：接口幂等性原则，防重复提交Token管理](https://mp.weixin.qq.com/s/o9sxN6GwxdNYTKZvRexwjg)|
+|04 | [架构设计：缓存管理模式，监控和内存回收策略](https://mp.weixin.qq.com/s/jBu-OZ69DbXfmdIf5VC7kQ)|
+|05 | [架构设计：异步处理流程，多种实现模式详解](https://mp.weixin.qq.com/s/RQm1vPJak0rCGW8dll4oAA)|
+|06 | [架构设计：高并发流量削峰，共享资源加锁机制](https://mp.weixin.qq.com/s/T13aak6us7ZF36qooQ-YPQ)|
+|07 | [架构设计：分布式服务，库表拆分模式详解](https://mp.weixin.qq.com/s/EZCIgZ4EWvFKgKlCYej68g)|
+|08 | [架构设计：分布式事务①概念简介和基础理论](https://mp.weixin.qq.com/s/7ppTArAcu_i8ENa-tNo76A)|
+
+### 数据管理
 
 |序号| 标题|
 |:---|:---|
@@ -15,26 +29,12 @@
 |09 | [数据源管理：搜索引擎框架，ElasticSearch集群模式](https://mp.weixin.qq.com/s/Qgear9nCwXn8W98SHkXJZw)|
 |10 | [数据源管理：分布式NoSQL系统，Cassandra集群管理](https://mp.weixin.qq.com/s/LffhFui3YfouUAxPL_rCsg)|
 
-### 2、数据分析
+### 数据分析
 
 |序号| 标题|
 |:---|:---|
 |01 | [数据分析：基于智能标签，精准管理数据](https://mp.weixin.qq.com/s/Tg_AirB-ewWym6MOhRkwjw)|
 |02 | [数据分析：数据可视化图表，BI工具构建逻辑](https://mp.weixin.qq.com/s/W86TbvYD_i9h23ZSNeh1Ag)|
-
-### 3、架构设计
-
-|序号| 标题|
-|:---|:---|
-|00 | [架构设计：单服务.集群.分布式，基本区别和联系](https://mp.weixin.qq.com/s/NGxI3rC-6mWMDnrClaOR3Q)|
-|01 | [架构设计：分布式业务系统中，全局ID生成策略](https://mp.weixin.qq.com/s/1TKAwr99rKEHSxqXFixEhQ)|
-|02 | [架构设计：分布式系统调度，Zookeeper集群化管理](https://mp.weixin.qq.com/s/Yr4A95poVjlFsQ-Q0dF7hA)|
-|03 | [架构设计：接口幂等性原则，防重复提交Token管理](https://mp.weixin.qq.com/s/o9sxN6GwxdNYTKZvRexwjg)|
-|04 | [架构设计：缓存管理模式，监控和内存回收策略](https://mp.weixin.qq.com/s/jBu-OZ69DbXfmdIf5VC7kQ)|
-|05 | [架构设计：异步处理流程，多种实现模式详解](https://mp.weixin.qq.com/s/RQm1vPJak0rCGW8dll4oAA)|
-|06 | [架构设计：高并发流量削峰，共享资源加锁机制](https://mp.weixin.qq.com/s/T13aak6us7ZF36qooQ-YPQ)|
-|07 | [架构设计：分布式服务，库表拆分模式详解](https://mp.weixin.qq.com/s/EZCIgZ4EWvFKgKlCYej68g)|
-|08 | [架构设计：分布式事务①概念简介和基础理论](https://mp.weixin.qq.com/s/7ppTArAcu_i8ENa-tNo76A)|
 
 持续更新中...
 
