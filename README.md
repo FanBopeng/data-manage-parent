@@ -16,6 +16,7 @@
 |10 | [架构设计：基于电商交易流程，图解TCC事务分段提交](https://mp.weixin.qq.com/s/-vevjP5z2BMnrKn-8cYY7Q)|
 |11 | [架构设计：基于消息中间件，图解柔性事务一致性](https://mp.weixin.qq.com/s/T6NVFeHxp1h2OXsjAyh9Eg)|
 |12 | [架构设计：基于Seata中间件，微服务模式下事务管理](https://mp.weixin.qq.com/s/NoQaQUDQcdGIXbHwcJZPkw)|
+|13 | [架构设计：分布式体系下，服务分层监控策略](https://mp.weixin.qq.com/s/A-5385joT9HY_iYOpufJSg)|
 
 ### 数据管理
 
@@ -69,3 +70,4 @@
 |05|SpringBoot框架基础应用入门到进阶|[GitHub·点这里](https://github.com/cicadasmile/spring-boot-base)|[GitEE·点这里](https://gitee.com/cicadasmile/spring-boot-base)|☆☆☆☆|
 |06|SpringBoot框架整合开发常用中间件|[GitHub·点这里](https://github.com/cicadasmile/middle-ware-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/middle-ware-parent)|☆☆☆☆☆|
 |07|数据管理、分布式、架构设计基础案例|[GitHub·点这里](https://github.com/cicadasmile/data-manage-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/data-manage-parent)|☆☆☆☆☆|
+|08|大数据系列、存储、组件、计算等框架|[GitHub·点这里](https://github.com/cicadasmile/big-data-parent)|[GitEE·点这里](https://gitee.com/cicadasmile/big-data-parent)|☆☆☆☆☆|
