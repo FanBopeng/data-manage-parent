@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.generator.mybatis.plugin.dao.DtDefinedLogDao">
+
+    <resultMap id="BaseResultMap" type="com.generator.mybatis.plugin.entity.DtDefinedLog">
+        <!--@Table dt_defined_log-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="className" column="class_name" jdbcType="VARCHAR"/>
+        <result property="methodName" column="method_name" jdbcType="VARCHAR"/>
+        <result property="methodDesc" column="method_desc" jdbcType="VARCHAR"/>
+        <result property="apiType" column="api_type" jdbcType="INTEGER"/>
+        <result property="bizNature" column="biz_nature" jdbcType="INTEGER"/>
+        <result property="dataFlowType" column="data_flow_type" jdbcType="INTEGER"/>
+        <result property="reqParam" column="req_param" jdbcType="VARCHAR"/>
+        <result property="resParam" column="res_param" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, class_name, method_name, method_desc, api_type, biz_nature, data_flow_type, req_param, res_param
+        from defined-log.dt_defined_log
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, class_name, method_name, method_desc, api_type, biz_nature, data_flow_type, req_param, res_param
+        from defined-log.dt_defined_log
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, class_name, method_name, method_desc, api_type, biz_nature, data_flow_type, req_param, res_param
+        from defined-log.dt_defined_log
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="className != null and className != ''">
+                and class_name = #{className}
+            </if>
+            <if test="methodName != null and methodName != ''">
+                and method_name = #{methodName}
+            </if>
+            <if test="methodDesc != null and methodDesc != ''">
+                and method_desc = #{methodDesc}
+            </if>
+            <if test="apiType != null">
+                and api_type = #{apiType}
+            </if>
+            <if test="bizNature != null">
+                and biz_nature = #{bizNature}
+            </if>
+            <if test="dataFlowType != null">
+                and data_flow_type = #{dataFlowType}
+            </if>
+            <if test="reqParam != null and reqParam != ''">
+                and req_param = #{reqParam}
+            </if>
+            <if test="resParam != null and resParam != ''">
+                and res_param = #{resParam}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into defined-log.dt_defined_log(class_name, method_name, method_desc, api_type, biz_nature, data_flow_type, req_param, res_param)
+        values (#{className}, #{methodName}, #{methodDesc}, #{apiType}, #{bizNature}, #{dataFlowType}, #{reqParam}, #{resParam})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update defined-log.dt_defined_log
+        <set>
+            <if test="className != null and className != ''">
+                class_name = #{className},
+            </if>
+            <if test="methodName != null and methodName != ''">
+                method_name = #{methodName},
+            </if>
+            <if test="methodDesc != null and methodDesc != ''">
+                method_desc = #{methodDesc},
+            </if>
+            <if test="apiType != null">
+                api_type = #{apiType},
+            </if>
+            <if test="bizNature != null">
+                biz_nature = #{bizNature},
+            </if>
+            <if test="dataFlowType != null">
+                data_flow_type = #{dataFlowType},
+            </if>
+            <if test="reqParam != null and reqParam != ''">
+                req_param = #{reqParam},
+            </if>
+            <if test="resParam != null and resParam != ''">
+                res_param = #{resParam},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from defined-log.dt_defined_log where id = #{id}
+    </delete>
+
+</mapper>

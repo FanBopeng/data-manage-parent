@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.generator.mybatis.mapper.DefinedLogMapper" >
+  <resultMap id="BaseResultMap" type="com.generator.mybatis.pojo.DefinedLog" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="class_name" property="className" jdbcType="VARCHAR" />
+    <result column="method_name" property="methodName" jdbcType="VARCHAR" />
+    <result column="method_desc" property="methodDesc" jdbcType="VARCHAR" />
+    <result column="api_type" property="apiType" jdbcType="INTEGER" />
+    <result column="biz_nature" property="bizNature" jdbcType="INTEGER" />
+    <result column="data_flow_type" property="dataFlowType" jdbcType="INTEGER" />
+    <result column="req_param" property="reqParam" jdbcType="VARCHAR" />
+    <result column="res_param" property="resParam" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, class_name, method_name, method_desc, api_type, biz_nature, data_flow_type, req_param, 
+    res_param
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.generator.mybatis.pojo.DefinedLogExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from dt_defined_log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from dt_defined_log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from dt_defined_log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.generator.mybatis.pojo.DefinedLogExample" >
+    delete from dt_defined_log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.generator.mybatis.pojo.DefinedLog" >
+    insert into dt_defined_log (id, class_name, method_name, 
+      method_desc, api_type, biz_nature, 
+      data_flow_type, req_param, res_param
+      )
+    values (#{id,jdbcType=INTEGER}, #{className,jdbcType=VARCHAR}, #{methodName,jdbcType=VARCHAR}, 
+      #{methodDesc,jdbcType=VARCHAR}, #{apiType,jdbcType=INTEGER}, #{bizNature,jdbcType=INTEGER}, 
+      #{dataFlowType,jdbcType=INTEGER}, #{reqParam,jdbcType=VARCHAR}, #{resParam,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.generator.mybatis.pojo.DefinedLog" >
+    insert into dt_defined_log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="className != null" >
+        class_name,
+      </if>
+      <if test="methodName != null" >
+        method_name,
+      </if>
+      <if test="methodDesc != null" >
+        method_desc,
+      </if>
+      <if test="apiType != null" >
+        api_type,
+      </if>
+      <if test="bizNature != null" >
+        biz_nature,
+      </if>
+      <if test="dataFlowType != null" >
+        data_flow_type,
+      </if>
+      <if test="reqParam != null" >
+        req_param,
+      </if>
+      <if test="resParam != null" >
+        res_param,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="className != null" >
+        #{className,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null" >
+        #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="methodDesc != null" >
+        #{methodDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="apiType != null" >
+        #{apiType,jdbcType=INTEGER},
+      </if>
+      <if test="bizNature != null" >
+        #{bizNature,jdbcType=INTEGER},
+      </if>
+      <if test="dataFlowType != null" >
+        #{dataFlowType,jdbcType=INTEGER},
+      </if>
+      <if test="reqParam != null" >
+        #{reqParam,jdbcType=VARCHAR},
+      </if>
+      <if test="resParam != null" >
+        #{resParam,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.generator.mybatis.pojo.DefinedLogExample" resultType="java.lang.Integer" >
+    select count(*) from dt_defined_log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update dt_defined_log
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.className != null" >
+        class_name = #{record.className,jdbcType=VARCHAR},
+      </if>
+      <if test="record.methodName != null" >
+        method_name = #{record.methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.methodDesc != null" >
+        method_desc = #{record.methodDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.apiType != null" >
+        api_type = #{record.apiType,jdbcType=INTEGER},
+      </if>
+      <if test="record.bizNature != null" >
+        biz_nature = #{record.bizNature,jdbcType=INTEGER},
+      </if>
+      <if test="record.dataFlowType != null" >
+        data_flow_type = #{record.dataFlowType,jdbcType=INTEGER},
+      </if>
+      <if test="record.reqParam != null" >
+        req_param = #{record.reqParam,jdbcType=VARCHAR},
+      </if>
+      <if test="record.resParam != null" >
+        res_param = #{record.resParam,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update dt_defined_log
+    set id = #{record.id,jdbcType=INTEGER},
+      class_name = #{record.className,jdbcType=VARCHAR},
+      method_name = #{record.methodName,jdbcType=VARCHAR},
+      method_desc = #{record.methodDesc,jdbcType=VARCHAR},
+      api_type = #{record.apiType,jdbcType=INTEGER},
+      biz_nature = #{record.bizNature,jdbcType=INTEGER},
+      data_flow_type = #{record.dataFlowType,jdbcType=INTEGER},
+      req_param = #{record.reqParam,jdbcType=VARCHAR},
+      res_param = #{record.resParam,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.generator.mybatis.pojo.DefinedLog" >
+    update dt_defined_log
+    <set >
+      <if test="className != null" >
+        class_name = #{className,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null" >
+        method_name = #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="methodDesc != null" >
+        method_desc = #{methodDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="apiType != null" >
+        api_type = #{apiType,jdbcType=INTEGER},
+      </if>
+      <if test="bizNature != null" >
+        biz_nature = #{bizNature,jdbcType=INTEGER},
+      </if>
+      <if test="dataFlowType != null" >
+        data_flow_type = #{dataFlowType,jdbcType=INTEGER},
+      </if>
+      <if test="reqParam != null" >
+        req_param = #{reqParam,jdbcType=VARCHAR},
+      </if>
+      <if test="resParam != null" >
+        res_param = #{resParam,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.generator.mybatis.pojo.DefinedLog" >
+    update dt_defined_log
+    set class_name = #{className,jdbcType=VARCHAR},
+      method_name = #{methodName,jdbcType=VARCHAR},
+      method_desc = #{methodDesc,jdbcType=VARCHAR},
+      api_type = #{apiType,jdbcType=INTEGER},
+      biz_nature = #{bizNature,jdbcType=INTEGER},
+      data_flow_type = #{dataFlowType,jdbcType=INTEGER},
+      req_param = #{reqParam,jdbcType=VARCHAR},
+      res_param = #{resParam,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+		PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+		"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<context id="testTables" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+			<property name="suppressAllComments" value="true"/>
+			<property name="suppressDate" value="false"/>
+			<!-- 是否添加数据表中字段的注释 true：是 ： false:否 -->
+			<property name="addRemarkComments" value="true"/>
+		</commentGenerator>
+
+		<!--数据库的信息：驱动类、连接地址、用户名、密码 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/defined-log?tinyInt1isBit=false"
+			userId="root" password="123456">
+		</jdbcConnection>
+
+		<!--
+			默认false，把JDBC decimal 和 numeric 类型解析为 Integer
+		    设置true时把JDBC decimal 和 numeric 类型解析为BigDecimal
+		-->
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- 生成POJO类的位置 -->
+		<javaModelGenerator targetPackage="com.generator.mybatis.pojo"
+			targetProject="存放路径">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!-- 生成Mapper映射文件的位置 -->
+		<sqlMapGenerator targetPackage="com.generator.mybatis.xml"
+			targetProject="存放路径">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!-- 生成Mapper接口的位置 -->
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.generator.mybatis.mapper"
+			targetProject="存放路径">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- 指定数据库表 -->
+		<table schema="" tableName="dt_defined_log" domainObjectName="DefinedLog"/>
+
+	</context>
+</generatorConfiguration>

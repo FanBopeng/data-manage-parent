@@ -22,6 +22,8 @@
         <module>heap02-data-analy</module>
         <!-- 架构设计 -->
         <module>heap03-frame-design</module>
+        <!-- 规范与工具 -->
+        <module>heap04-format-tool</module>
     </modules>
 
     <!-- 版本管理 -->
