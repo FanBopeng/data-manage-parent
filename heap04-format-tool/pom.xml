@@ -16,6 +16,5 @@
 
     <modules>
         <module>case01-generator-code</module>
-        <module>case01-generator-code/generator-mybatis-plugin</module>
     </modules>
 </project>

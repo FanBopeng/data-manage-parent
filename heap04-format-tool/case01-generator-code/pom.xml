@@ -18,6 +18,7 @@
     <modules>
         <module>generator-mybatis</module>
         <module>generator-mybatis-plus</module>
+        <module>generator-mybatis-plugin</module>
     </modules>
 
 </project>
