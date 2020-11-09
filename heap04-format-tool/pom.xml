@@ -16,5 +16,6 @@
 
     <modules>
         <module>case01-generator-code</module>
+        <module>case02-mvc-style</module>
     </modules>
 </project>

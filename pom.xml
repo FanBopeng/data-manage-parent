@@ -65,6 +65,7 @@
         <guava.version>RELEASE</guava.version>
         <mail.version>1.5.0-b01</mail.version>
         <shard-jdbc.version>3.1.0</shard-jdbc.version>
+        <lombok.version>1.18.8</lombok.version>
     </properties>
 
     <build>
