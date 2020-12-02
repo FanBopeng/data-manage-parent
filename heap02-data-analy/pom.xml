@@ -15,7 +15,10 @@
     <modules>
         <!-- 只能数据标签 -->
         <module>case01-smart-tag</module>
+        <!-- 可视化图表 -->
         <module>case02-visual-chart</module>
+        <!-- 业务评估流程 -->
+        <module>case03-assess-biz</module>
     </modules>
 
 </project>
