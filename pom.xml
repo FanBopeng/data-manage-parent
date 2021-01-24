@@ -24,6 +24,8 @@
         <module>heap03-frame-design</module>
         <!-- 规范与工具 -->
         <module>heap04-format-tool</module>
+        <!-- 常用中间件 -->
+        <module>heap05-middle-ware</module>
     </modules>
 
     <!-- 版本管理 -->
