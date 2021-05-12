@@ -34,12 +34,12 @@
 |02 | [数据源管理：基于JDBC模式，适配和管理动态数据源](https://mp.weixin.qq.com/s/_mOvZp0-LMEvcBpLuI2p7w)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case02-dynamic-add)|
 |03 | [数据源管理：动态权限校验，表结构和数据迁移流程](https://mp.weixin.qq.com/s/Acrff9vopDj67jH17f9FUg)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case03-read-write)|
 |04 | [数据源管理：关系型分库分表，列式库分布式计算](https://mp.weixin.qq.com/s/Ej39uHHgJIeyDmxDVJGvMQ)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case04-shard-ing)|
-|05 | [数据源管理：PostGreSQL环境整合，JSON类型应用](https://mp.weixin.qq.com/s/GqFJCoWiEtgG-LXY3Cb54w)|...|
-|06 | [数据源管理：基于DataX组件，同步数据和源码分析](https://mp.weixin.qq.com/s/FZz-0Q5d1ZLi4nLE2uIchQ)|...|
-|07 | [数据源管理：OLAP查询引擎，ClickHouse集群化管理](https://mp.weixin.qq.com/s/8D9XfWlVUSusoPgsbRFuiw)|...|
-|08 | [数据源管理：Kafka集群环境搭建，消息存储机制详解](https://mp.weixin.qq.com/s/ygVFjtpbk4cNdl3VI7DHpQ)|...|
-|09 | [数据源管理：搜索引擎框架，ElasticSearch集群模式](https://mp.weixin.qq.com/s/Qgear9nCwXn8W98SHkXJZw)|...|
-|10 | [数据源管理：分布式NoSQL系统，Cassandra集群管理](https://mp.weixin.qq.com/s/LffhFui3YfouUAxPL_rCsg)|...|
+|05 | [数据源管理：PostGreSQL环境整合，JSON类型应用](https://mp.weixin.qq.com/s/GqFJCoWiEtgG-LXY3Cb54w)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case05-post-gresql)|
+|06 | [数据源管理：基于DataX组件，同步数据和源码分析](https://mp.weixin.qq.com/s/FZz-0Q5d1ZLi4nLE2uIchQ)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case06-datax-sync)|
+|07 | [数据源管理：OLAP查询引擎，ClickHouse集群化管理](https://mp.weixin.qq.com/s/8D9XfWlVUSusoPgsbRFuiw)|[GitHub]()|
+|08 | [数据源管理：Kafka集群环境搭建，消息存储机制详解](https://mp.weixin.qq.com/s/ygVFjtpbk4cNdl3VI7DHpQ)|[GitHub]()|
+|09 | [数据源管理：搜索引擎框架，ElasticSearch集群模式](https://mp.weixin.qq.com/s/Qgear9nCwXn8W98SHkXJZw)|[GitHub]()|
+|10 | [数据源管理：分布式NoSQL系统，Cassandra集群管理](https://mp.weixin.qq.com/s/LffhFui3YfouUAxPL_rCsg)|[GitHub]()|
 
 ### 数据分析
 
