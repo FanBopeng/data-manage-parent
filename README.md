@@ -37,8 +37,8 @@
 |05 | [数据源管理：PostGreSQL环境整合，JSON类型应用](https://mp.weixin.qq.com/s/GqFJCoWiEtgG-LXY3Cb54w)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case05-post-gresql)|
 |06 | [数据源管理：基于DataX组件，同步数据和源码分析](https://mp.weixin.qq.com/s/FZz-0Q5d1ZLi4nLE2uIchQ)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case06-datax-sync)|
 |07 | [数据源管理：OLAP查询引擎，ClickHouse集群化管理](https://mp.weixin.qq.com/s/8D9XfWlVUSusoPgsbRFuiw)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case07-ckhouse-cluster)|
-|08 | [数据源管理：Kafka集群环境搭建，消息存储机制详解](https://mp.weixin.qq.com/s/ygVFjtpbk4cNdl3VI7DHpQ)|[GitHub]()|
-|09 | [数据源管理：搜索引擎框架，ElasticSearch集群模式](https://mp.weixin.qq.com/s/Qgear9nCwXn8W98SHkXJZw)|[GitHub]()|
+|08 | [数据源管理：Kafka集群环境搭建，消息存储机制详解](https://mp.weixin.qq.com/s/ygVFjtpbk4cNdl3VI7DHpQ)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case08-kafka-cluster)|
+|09 | [数据源管理：搜索引擎框架，ElasticSearch集群模式](https://mp.weixin.qq.com/s/Qgear9nCwXn8W98SHkXJZw)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap01-data-source/case09-esearch-cluster)|
 |10 | [数据源管理：分布式NoSQL系统，Cassandra集群管理](https://mp.weixin.qq.com/s/LffhFui3YfouUAxPL_rCsg)|[GitHub]()|
 
 ### 数据分析
