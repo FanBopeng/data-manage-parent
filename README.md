@@ -60,7 +60,7 @@
 |序号| 标题| 源码 |
 |:---|:---|:---|
 |01 | [开发工具：Mybatis.Plus.插件三种方式的逆向工程](https://mp.weixin.qq.com/s/IGcSMw3lmcOSTS-8a-AVGw)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap04-format-tool/case01-generator-code)|
-|02 | [编码风格：Mvc模式下SSM环境，代码分层管理](https://mp.weixin.qq.com/s/O4w4ojM-RFqikTW-N2nleQ)|[GitHub]()|
+|02 | [编码风格：Mvc模式下SSM环境，代码分层管理](https://mp.weixin.qq.com/s/O4w4ojM-RFqikTW-N2nleQ)|[GitHub](https://github.com/cicadasmile/data-manage-parent/tree/master/heap04-format-tool/case02-mvc-style)|
 
 持续更新...
 
